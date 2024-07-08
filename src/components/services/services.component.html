@@ -1,0 +1,26 @@
+@if (services$ | async ; as services) {
+<div class="tahalof-container services-header">
+  <div class="row">
+    <div class="col-12">
+      <div class="services-content">
+        <h2>{{ services.main_title }}</h2>
+        <p>{{ services.main_description }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="tahalof-container">
+  <div class="row row-gap-1">
+    @for (service of services.services.results; track service) {
+    <div class="col-4">
+      <services-box
+        [img]="service.main_image"
+        [name]="service.name"
+        [discription]="service.description"
+      ></services-box>
+    </div>
+    }
+  </div>
+</div>
+
+}

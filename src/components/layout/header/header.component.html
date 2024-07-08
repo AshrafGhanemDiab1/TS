@@ -1,0 +1,48 @@
+@if (header$ | async ; as header) {
+<div class="navbar-header">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-5 ms-auto">
+        <img src="../../../assets/images/logo2.png" alt="" />
+      </div>
+      <div class="col-7 m-auto">
+        <div class="content">
+          <div>
+            <ul>
+              <li>
+                <a routerLink="home" [routerLinkActive]="'activete'">Home</a>
+              </li>
+              <li>
+                <a routerLink="company" [routerLinkActive]="'activete'"
+                  >Our Company</a
+                >
+              </li>
+              <li>
+                <a routerLink="services" [routerLinkActive]="'activete'"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a routerLink="facilities" [routerLinkActive]="'activete'"
+                  >Our Facilities</a
+                >
+              </li>
+              <li>
+                <a routerLink="news" [routerLinkActive]="'activete'">News</a>
+              </li>
+              <li>
+                <a routerLink="careers" [routerLinkActive]="'activete'"
+                  >Careers</a
+                >
+              </li>
+              <app-button content="Contact Us"></app-button>
+              <li>AR</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+}

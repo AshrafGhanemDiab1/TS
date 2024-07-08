@@ -1,0 +1,37 @@
+@import "mixins";
+@import "colors";
+
+// Blue button style start here
+.blue-btn,
+.white-btn,
+.gray-btn {
+  border: none;
+  padding: 0.6rem 3rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+
+  &:active {
+    outline: none;
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  }
+  @include x-small-screen {
+    width: 100%;
+  }
+  @include medium-screen {
+    width: auto;
+  }
+}
+.blue-btn {
+  background-color: $blue-medium-2;
+  color: $white;
+}
+.white-btn {
+  color: $blue-medium-2;
+  background-color: $white;
+}
+.gray-btn {
+  color: $blue-medium-2;
+  background-color: $gray;
+}
+
+// Blue button style Arabic start here

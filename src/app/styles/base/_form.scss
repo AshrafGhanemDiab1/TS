@@ -1,0 +1,57 @@
+@import "colors";
+.form-group {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 0 !important;
+  padding-bottom: 1.5rem;
+
+  .form-control-label {
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+    font-size: 1rem;
+    color: $white;
+  }
+  & .blackLabel {
+    color: $black;
+  }
+
+  .form-control {
+    margin: 0;
+    height: auto;
+    min-height: 3rem;
+    padding: 0.65rem 1rem 0.55rem;
+    font-size: 0.9rem;
+    border: 0;
+    border-bottom: solid 1px $white;
+    border-radius: 0;
+    &:focus {
+      box-shadow: none;
+    }
+    &:disabled {
+      background-color: disabled;
+    }
+    &.has-error {
+      &:not(.disabled) {
+        border: 1px solid $error;
+      }
+    }
+    &.textarea {
+      height: 11rem;
+      resize: none;
+    }
+    &::placeholder {
+    }
+  }
+  .error-message {
+    width: 105%;
+    position: absolute;
+    bottom: 1px;
+    color: $error;
+    font-size: 0.7rem;
+    .message {
+      width: 100%;
+      display: block;
+    }
+  }
+}

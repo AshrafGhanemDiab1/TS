@@ -1,0 +1,28 @@
+@import "variables";
+@import "colors";
+h2 {
+  font-size: 2.5rem !important; // 20px
+  font-weight: 700;
+  color: $blue-medium-2;
+}
+
+p {
+  font-size: 1.125rem; // 18px
+}
+span {
+  font-size: 0.875rem; // 14px
+}
+.s-title {
+  font-size: 2.188rem; // 35px
+}
+
+.sub-title {
+  font-size: 1.875rem; // 30px
+}
+
+.sub-title-25 {
+  font-size: 1.563rem; //25px
+}
+.title-16 {
+  font-size: 1rem; //16px
+}

@@ -1,0 +1,13 @@
+@import "../../app/styles/base/colors";
+@import "../../app/styles/base/font-size.scss";
+@import "../../app/styles/base/mixins";
+@import "../../app/styles/layout.scss";
+.services-header {
+  margin-bottom: 1.5rem;
+  .services-content {
+    p {
+      max-width: 640px;
+      margin: 1rem 0;
+    }
+  }
+}

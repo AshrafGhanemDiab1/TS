@@ -1,0 +1,44 @@
+@mixin backgroundImage {
+  background-position: center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+
+@mixin flexCenter() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin yCenter() {
+  display: flex;
+  align-items: center;
+}
+
+@mixin xCenter() {
+  display: flex;
+  justify-content: center;
+}
+@mixin xStart {
+  display: flex;
+  justify-content: flex-start;
+}
+
+@mixin yEnd {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+@mixin between() {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin full-width-height {
+  width: 100%;
+  height: 100%;
+}
+// @mixin toRem($property, $value) {
+//   #{$property}: ($value / 16) + rem;
+// }
