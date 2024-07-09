@@ -20,4 +20,5 @@ export interface Services {
   main_title: string;
   page_title: string;
   services: ServicesPagen;
+  contact_button: string;
 }

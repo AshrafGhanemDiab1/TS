@@ -1,5 +1,5 @@
 @if (services$ | async ; as services) {
-<div class="tahalof-container services-header">
+<div class="tahalof-container mt-5 services-header">
   <div class="row">
     <div class="col-12">
       <div class="services-content">
@@ -12,8 +12,9 @@
 <div class="tahalof-container">
   <div class="row row-gap-1">
     @for (service of services.services.results; track service) {
-    <div class="col-4">
+    <div class="col-lg-4 col-sm-12 mt-sm-5">
       <services-box
+        routerLink="{{ link }}/{{ service.uuid }}"
         [img]="service.main_image"
         [name]="service.name"
         [discription]="service.description"
@@ -22,5 +23,9 @@
     }
   </div>
 </div>
-
+<app-services-help
+  [title]="services.contact_title"
+  [discription]="services.contact_description"
+  [button]="services.contact_button"
+></app-services-help>
 }
