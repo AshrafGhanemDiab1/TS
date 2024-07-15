@@ -112,6 +112,7 @@
     display: none !important;
   }
   .mat-mdc-tab-label-container {
+    border: none !important;
     @media screen and (max-width: 768px) {
       width: 80% !important;
       margin: auto !important ;
