@@ -1,0 +1,50 @@
+@import "../../app/styles/base/colors";
+.content {
+  ::ng-deep h2 {
+    max-width: 700px !important;
+    font: 500 20px / 50px Roboto, sans-serif;
+    letter-spacing: 0.0125em;
+    margin: 0 0 0;
+  }
+}
+.content-img {
+  width: 100%;
+  margin-top: 5rem;
+  position: relative;
+  cursor: pointer;
+  .date {
+    position: absolute;
+    background: $blue-medium-2;
+    color: white;
+    padding: 0.5rem 3rem;
+    margin-top: 0px;
+    text-align: center;
+    z-index: 2;
+    h4 {
+      margin: 0 !important;
+    }
+  }
+  img {
+    position: relative;
+    height: 55vh;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+    transition: all 1.5s;
+  }
+}
+.logo {
+  img {
+    position: absolute;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.6);
+    opacity: 0;
+    z-index: 50000;
+  }
+}
+::ng-deep .overlay {
+  z-index: 4;
+}
+.content-img:hover .logo img {
+  opacity: 1;
+}

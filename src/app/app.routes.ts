@@ -26,6 +26,13 @@ export const routes: Routes = [
             (m) => m.Services
           ),
       },
+      {
+        path: 'hospitals',
+        loadChildren: () =>
+          import('../components/hospitals/hospitals.routes').then(
+            (m) => m.Hospitals
+          ),
+      },
     ],
   },
 ];
