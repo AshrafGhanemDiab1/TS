@@ -1,0 +1,40 @@
+@import "../../../app/styles/base/colors";
+.section-one {
+  background-color: $blue-medium-1-op;
+  .col-lg-6 {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .vision-header {
+    height: 100%;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+    margin-top: var(--bs-gutter-y);
+    @media screen and (max-width: 768px) {
+      margin-bottom: 1.5rem;
+    }
+    img {
+      width: 100%;
+    }
+    .vision-content {
+      margin: auto;
+      max-width: 550px;
+      height: auto;
+      @media screen and (max-width: 768px) {
+        text-align: center;
+        max-width: 400px;
+      }
+      h2 {
+        font-size: 22px !important;
+        color: $blue-medium-2;
+        margin-bottom: 3rem;
+      }
+      p {
+        font-size: 1rem;
+        line-height: 1.9rem;
+        max-width: 439px;
+      }
+    }
+  }
+}

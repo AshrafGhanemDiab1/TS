@@ -27,9 +27,11 @@
       margin-right: 2.5rem;
     }
   }
-  ::ng-deep .button-shared {
+  ::ng-deep button {
     margin-right: 2.5rem;
     padding: 0.6rem 1.5rem !important;
+    background-color: $white !important;
+    color: $blue-medium-2 !important;
   }
 }
 

@@ -1,0 +1,22 @@
+<mat-tab-group
+  class="tahalof-container remove-border-bottom overflow-hidden position-relative"
+>
+  @for (history of aboutUs.history; track history) {
+  <div class="row justify-content-center align-items-center">
+    <div class="col-md-3 col-sm-2">
+      <mat-tab>
+        <ng-template mat-tab-label>
+          <div class="content">
+            <h2>{{ history.month }}</h2>
+            <h2>{{ history.year }}</h2>
+          </div>
+        </ng-template>
+        <div class="disc-img">
+          <p>{{ history.description }}</p>
+          <img class="w-25" [src]="imgUrl + history.logo" />
+        </div>
+      </mat-tab>
+    </div>
+  </div>
+  }
+</mat-tab-group>

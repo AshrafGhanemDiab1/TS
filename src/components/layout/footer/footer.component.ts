@@ -5,11 +5,12 @@ import { HttpClient } from '@angular/common/http';
 import { Endpoints } from '../../../app/environments/endpoints';
 import { CommonModule } from '@angular/common';
 import { ButtonComponent } from '../../shared/button/button.component';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-footer',
   standalone: true,
-  imports: [CommonModule, ButtonComponent],
+  imports: [CommonModule, ButtonComponent, RouterLink],
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.scss',
 })

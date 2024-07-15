@@ -13,6 +13,13 @@ export const routes: Routes = [
           import('../components/home/home.routes').then((m) => m.Home),
       },
       {
+        path: 'company',
+        loadChildren: () =>
+          import('../components/our-company/company.routes').then(
+            (m) => m.Company
+          ),
+      },
+      {
         path: 'services',
         loadChildren: () =>
           import('../components/services/services.routes').then(
