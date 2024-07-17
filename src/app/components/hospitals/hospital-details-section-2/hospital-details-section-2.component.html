@@ -1,0 +1,41 @@
+<div class="tahalof-container">
+  <div class="content-header">
+    <div class="content-one">
+      <ul>
+        <li>
+          {{ hospitalDetails.country_title }} :
+          <span>{{ hospitalDetails.country }}</span>
+        </li>
+        <li>
+          {{ hospitalDetails.contact_title }} :
+          <span
+            ><img [src]="imgUrl + hospitalDetails.contact_svg1" alt=""
+          /></span>
+          <span>{{ hospitalDetails.contact_number1 }}</span>
+          <span class="ms-5"
+            ><img [src]="imgUrl + hospitalDetails.contact_svg2" alt=""
+          /></span>
+          <span>{{ hospitalDetails.branch }}</span>
+        </li>
+        <li>
+          {{ hospitalDetails.branch_title }} :
+          <span>{{ hospitalDetails.contact_number2 }}</span>
+        </li>
+        <li>
+          {{ hospitalDetails.location_title }} :
+          <span
+            ><img [src]="imgUrl + hospitalDetails.location_svg" alt=""
+          /></span>
+          <span>{{ hospitalDetails.location }}</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<about-us
+  [title]="hospitalDetails.description_title"
+  [decription]="hospitalDetails.description1"
+  [imgeOne]="hospitalDetails.description_img1"
+  [imgaetow]="hospitalDetails.description_img2"
+  [lastDiscr]="hospitalDetails.description2"
+></about-us>

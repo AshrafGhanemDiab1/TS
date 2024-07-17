@@ -5,5 +5,19 @@ body {
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+.mat-h2,
+.mat-headline-6,
+.mat-typography .mat-h2,
+.mat-typography .mat-headline-6,
+.mat-typography h2 {
+  font: 500 2.5rem / 50px Roboto, sans-serif !important;
+  margin: 0 0 16px;
+}

@@ -1,5 +1,5 @@
 import { Routes } from '@angular/router';
-import { LayoutComponent } from '../components/layout/layout.component';
+import { LayoutComponent } from './components/layout/layout.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -10,26 +10,26 @@ export const routes: Routes = [
       {
         path: 'home',
         loadChildren: () =>
-          import('../components/home/home.routes').then((m) => m.Home),
+          import('./components/home/home.routes').then((m) => m.Home),
       },
       {
         path: 'company',
         loadChildren: () =>
-          import('../components/our-company/company.routes').then(
+          import('./components/our-company/company.routes').then(
             (m) => m.Company
           ),
       },
       {
         path: 'services',
         loadChildren: () =>
-          import('../components/services/services.routes').then(
+          import('./components/services/services.routes').then(
             (m) => m.Services
           ),
       },
       {
         path: 'hospitals',
         loadChildren: () =>
-          import('../components/hospitals/hospitals.routes').then(
+          import('./components/hospitals/hospitals.routes').then(
             (m) => m.Hospitals
           ),
       },

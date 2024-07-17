@@ -1,0 +1,109 @@
+@if (servicesDetails$ | async ; as servicesDetails) {
+<div class="services-detais-header position-relative" setRtl>
+  <div class="background-img"></div>
+
+  <div #image class="services-detais-img position-relative">
+    <h2>{{ servicesDetails.name }}</h2>
+    <div class="overlay"></div>
+  </div>
+  <div class="tahalof-container">
+    <div class="col-12">
+      <div class="content-header">
+        <h2>{{ servicesDetails.overview }}</h2>
+        <p>{{ servicesDetails.description }}</p>
+      </div>
+    </div>
+    <div class="color">
+      <div class="row">
+        <div class="col-md-4 col-sm-12">
+          <div class="services-details-content-img">
+            <img
+              [src]="imgUrl + servicesDetails.service_details_top_left_image"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <div class="services-details-content-img">
+            <div class="content">
+              <h2>{{ servicesDetails.we_do_title }}</h2>
+              <p>
+                {{ servicesDetails.service_details_top_middle_description }}
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <div class="services-details-content-img">
+            <img
+              [src]="
+                imgUrl +
+                servicesDetails.service_details_top_right_description_image
+              "
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <div class="services-details-content-img">
+            <div class="content">
+              <p>
+                {{ servicesDetails.service_details_bottom_left_description }}
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <div class="services-details-content-img">
+            <img
+              [src]="
+                imgUrl + servicesDetails.service_details_bottom_middle_image
+              "
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <div class="services-details-content-img">
+            <div class="content">
+              <p>
+                {{ servicesDetails.service_details_bottom_right_description }}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="investment">
+      <div class="row">
+        <div class="investment-header">
+          <h2>{{ servicesDetails.name }}</h2>
+        </div>
+        @for (item of servicesDetails.case_studies; track $index) {
+        <div class="col-md-3 col-sm-12">
+          <div class="box-parint">
+            <div class="investment-img">
+              <img [src]="imgUrl + item.image" alt="" />
+            </div>
+            <div class="investment-content">
+              <h2>{{ item.title }}</h2>
+              <p>{{ item.description }}</p>
+            </div>
+          </div>
+        </div>
+        }
+      </div>
+      <div class="col-md-5 col-sm-12">
+        <div class="happy">
+          <h2>{{ servicesDetails.contact.contact_title }}</h2>
+          <p>{{ servicesDetails.contact.contact_description }}</p>
+          <app-button
+            [content]="servicesDetails.contact.contact_button"
+          ></app-button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+}

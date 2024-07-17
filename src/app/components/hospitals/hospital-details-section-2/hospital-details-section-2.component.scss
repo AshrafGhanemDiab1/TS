@@ -1,0 +1,21 @@
+@import "../../../../app/styles/base/colors";
+.content-header {
+  .content-one {
+    span {
+      margin-inline-start: 0.5rem;
+      font-weight: 600;
+      color: $black;
+      font-size: 1.1rem !important;
+    }
+    li {
+      color: $blue-medium-2;
+      font-size: 1.5rem !important;
+      color: #034773;
+      margin: 1.5rem 0;
+      font-weight: 300;
+    }
+    img {
+      width: 21.31px;
+    }
+  }
+}

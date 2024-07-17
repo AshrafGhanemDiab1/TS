@@ -1,0 +1,52 @@
+@import "../../../../app/styles/base/colors";
+@import "../../../../app/styles/base/mixins";
+.background {
+  width: 100%;
+  position: relative;
+  background-color: #e5ecf1;
+  margin-bottom: 3rem;
+  .row-header {
+    .header-img {
+      height: calc(100vh - 131.45px);
+      width: 100%;
+      @media screen and (max-width: 768px) {
+        height: 100%;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .header-content {
+      position: relative;
+      width: 100%;
+      top: 45%;
+      transform: translateY(-50%);
+      h2 {
+        margin-bottom: 1.6rem;
+        font-weight: 700;
+        color: $blue-medium-2;
+      }
+      h3 {
+        margin-bottom: 2.5rem;
+        color: $blue-medium-2;
+      }
+      p {
+        font-weight: 600;
+        margin-bottom: 1.7rem;
+      }
+    }
+  }
+  ::ng-deep {
+    .tahalof-container {
+      height: 100%;
+    }
+    .background-img {
+      height: 33%;
+    }
+    button {
+      position: relative;
+      z-index: 5;
+    }
+  }
+}

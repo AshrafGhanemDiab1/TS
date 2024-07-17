@@ -1,0 +1,26 @@
+<div class="background position-relative overflow-hidden">
+  <div class="container-fluid">
+    <div class="row-header">
+      <div class="row">
+        <div class="col-md-6 col-sm1-12">
+          <div class="tahalof-container">
+            <div class="header-content">
+              <h2>{{ aboutUs.main_title1 }}</h2>
+              <h3>{{ aboutUs.sub_title1 }}</h3>
+              <p>{{ aboutUs.description1 }}</p>
+              <app-button>
+                {{ "MENU.CONTACT_US" | translate }}
+              </app-button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm1-12">
+          <div class="header-img">
+            <img [src]="imgUrl + aboutUs.main_image1" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="background-img"></div>
+</div>

@@ -1,0 +1,40 @@
+@import "../../../styles/base/colors";
+::ng-deep swiper-container {
+  width: 100%;
+  swiper-slide {
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+    .swiper-content {
+      bottom: 0;
+      position: absolute;
+      z-index: 66;
+      background-color: rgba(0, 0, 0, 0.4);
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      padding: 2rem 0;
+    }
+    p {
+      max-width: 750px;
+      margin: auto;
+      color: $white;
+    }
+  }
+}
+.custom-next-button {
+  z-index: 100;
+  top: -23rem;
+  left: 95.5%;
+  position: relative;
+  width: fit-content;
+}
+
+.custom-prev-button {
+  z-index: 100;
+  top: -20rem;
+  left: 0;
+  position: relative;
+  width: fit-content;
+}

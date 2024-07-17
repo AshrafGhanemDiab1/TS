@@ -1,0 +1,72 @@
+@import "../../../../app/styles/base/colors";
+.details-header {
+  margin-bottom: 4rem;
+  overflow: hidden;
+  .background-img {
+    background-position: center !important;
+    background-size: 100% 100% !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed;
+    position: relative;
+    height: 80vh;
+  }
+  .header-content {
+    h2 {
+      color: $white !important;
+      position: absolute;
+      top: 60%;
+      left: 5%;
+      z-index: 55;
+      font-size: 2rem !important;
+    }
+  }
+
+  .img-svg {
+    position: relative;
+    height: 100%;
+    img {
+      text-align: center;
+      background-color: #f6f6f6;
+      bottom: -31%;
+      z-index: 200;
+      height: 30%;
+      width: 75% !important;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .row {
+      height: 100% !important;
+    }
+  }
+  .img-content-section {
+    position: relative;
+    img {
+      text-align: center;
+      z-index: 2000000;
+      height: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      position: absolute;
+      background-color: transparent;
+    }
+    h2,
+    p {
+      text-align: center;
+      z-index: 2000000;
+      height: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      position: relative;
+      background-color: transparent;
+      bottom: -7.5rem;
+    }
+    h2 {
+      font-size: 2rem !important;
+    }
+    p {
+      font-size: 1.5rem !important;
+      font-weight: 300 !important;
+      color: $blue-medium-2;
+    }
+  }
+}

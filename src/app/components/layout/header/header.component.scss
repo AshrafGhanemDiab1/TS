@@ -1,0 +1,41 @@
+@import "../../../../app/styles/base/colors";
+.navbar-header {
+  background-color: $mainColor;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  padding: 2.1rem 0;
+  overflow: hidden;
+  .content {
+    position: relative;
+  }
+  img {
+    margin: 0 3rem;
+    width: 32%;
+  }
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-inline-end: 3rem !important;
+    li {
+      cursor: pointer;
+      color: white;
+    }
+    a {
+      color: $white;
+      opacity: 0.4;
+      margin-inline-end: 2.5rem;
+    }
+  }
+  ::ng-deep button {
+    margin-inline-end: 2.5rem;
+    padding: 0.6rem 1.5rem !important;
+    background-color: $white !important;
+    color: $blue-medium-2 !important;
+  }
+}
+
+.activete {
+  color: $white !important;
+  opacity: 1 !important;
+}

@@ -1,0 +1,56 @@
+@import "../../../../app/styles/base/colors";
+.header-img {
+  margin-top: 4rem;
+  .img {
+    background-image: var(--background-img);
+    height: 80vh;
+    background-position: center !important;
+    background-size: 100% 100% !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed;
+    position: relative;
+    @media screen and (max-width: 768px) {
+      height: 100%;
+    }
+  }
+  .about-header-content {
+    position: relative;
+    z-index: 2;
+    h2 {
+      font-size: 2.5rem;
+      color: $white !important;
+    }
+    p {
+      font-size: 1.7rem;
+    }
+  }
+  .achivements-header {
+    padding: 2rem 0;
+    background-color: rgba(#e5ecf1, 0.4);
+    @media screen and (max-width: 768px) {
+      margin-bottom: 1rem;
+    }
+    img {
+      width: 50px;
+      height: 35px;
+    }
+    .achivement-content {
+      color: $white;
+      h3 {
+        font-size: 2.25rem;
+        margin: 2rem 0;
+      }
+    }
+  }
+  .about-header-content {
+    margin: 3rem 0px;
+    color: $white;
+    h3 {
+      font-size: 30px;
+      margin-bottom: 1.5rem;
+    }
+    h4 {
+      font-size: 25px;
+    }
+  }
+}

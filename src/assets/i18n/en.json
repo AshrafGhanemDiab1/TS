@@ -1,0 +1,24 @@
+{
+  "MENU": {
+    "TAHALOF": "Tahalof El Seha",
+    "OUR_COMPANY": "Our Company",
+    "ABOUT_US": "About us",
+    "SERVICES": "Services",
+    "PORTFOLIO": "Our hospitals",
+    "CAREER": "Careers",
+    "NEWS": "News",
+    "404": "Page Not Found",
+    "500": "Server Error",
+    "HOME": "Home",
+    "CONTACT_US": "Contact us",
+    "TERMS_CONDITIONS": "Terms & Conditions",
+    "PRIVACY_POLICY": "Privacy Policy",
+    "FAQ": "FAQ",
+    "OUR_SERVICE": "Our Service",
+    "LANG": "AR"
+  },
+  "FOOTER": {
+    "NEWSLATTER": "Get our latest news",
+    "SUBSCRIBE": "Subscribe"
+  }
+}

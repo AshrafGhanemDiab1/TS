@@ -1,0 +1,9 @@
+@import "../../../../app/styles/base/colors";
+button {
+  background-color: $blue-medium-2 !important;
+  color: $white !important;
+  padding: 0.8rem 4rem;
+  cursor: pointer;
+  border: none;
+  font-weight: 600;
+}

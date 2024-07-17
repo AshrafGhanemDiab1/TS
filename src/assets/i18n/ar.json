@@ -1,0 +1,24 @@
+{
+  "MENU": {
+    "TAHALOF": "تحالف الصحة",
+    "OUR_COMPANY": "شركتنا",
+    "ABOUT_US": "عنا",
+    "SERVICES": "خدمات",
+    "PORTFOLIO": "مستشفياتنا",
+    "CAREER": "مسار وظيفي",
+    "NEWS": "أخبار",
+    "404": "صفحة خطأ",
+    "500": "مشكلة فى الخادم",
+    "HOME": "الرئيسية",
+    "CONTACT_US": "أتصل بنا",
+    "TERMS_CONDITIONS": "الشروط والأحكام",
+    "PRIVACY_POLICY": "سياسة الخصوصية",
+    "FAQ": "التعليمات",
+    "OUR_SERVICE": "خدامتنا",
+    "LANG": "EN"
+  },
+  "FOOTER": {
+    "NEWSLATTER": "احصل على أحدث إصداراتنا",
+    "SUBSCRIBE": "اشتراك"
+  }
+}
