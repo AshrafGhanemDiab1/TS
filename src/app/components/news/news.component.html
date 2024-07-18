@@ -15,7 +15,9 @@
           </h2>
           <h3>{{ result.main_title }}</h3>
           <p>{{ result.main_description | subText }}</p>
-          <app-button>Read More</app-button>
+          <app-button routerLink="{{ link }}/{{ result.id }}"
+            >Read More</app-button
+          >
         </div>
       </div>
     </div>

@@ -23,6 +23,9 @@
       z-index: 4;
       font-weight: 700;
       color: $white !important;
+      @media screen and (max-width: 992px) {
+        left: 50%;
+      }
     }
   }
   .color {

@@ -1,1 +1,35 @@
-<p>news-details works!</p>
+@if(newsDetails$ | async ; as newsD){
+<div class="tahalof-container">
+  <div class="row">
+    <div class="col-md-12 col-lg-4">
+      <div class="details-image">
+        <img [src]="imageUrl + newsD.main_image" alt="" />
+      </div>
+    </div>
+    <div class="col-lg-8 col-md-12">
+      <div class="details-content w-100">
+        <p>{{ newsD.main_description }}</p>
+      </div>
+    </div>
+  </div>
+  <div class="details-header py-sm-5 py-md-0">
+    <div class="row">
+      <div class="col-lg-4 col-md-12">
+        <div class="details-content">
+          <p>{{ newsD.left_description }}</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-12">
+        <div class="details-image">
+          <img [src]="imageUrl + newsD.middle_image" alt="" />
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-12">
+        <div class="details-content">
+          <p>{{ newsD.right_description }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+}

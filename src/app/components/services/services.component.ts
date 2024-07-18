@@ -24,7 +24,6 @@ export class ServicesComponent implements OnInit {
   services$!: Observable<Services>;
   @Input() services!: ServicesList;
   @Input() link = '/services';
-  private readonly route = inject(ActivatedRoute);
   ngOnInit(): void {
     this.services$ = this.httpservices.get<Services>(Endpoints.SERVICE);
   }

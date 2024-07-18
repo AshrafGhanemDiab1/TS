@@ -25,6 +25,12 @@
       color: $white;
       opacity: 0.4;
       margin-inline-end: 2.5rem;
+      transition: 0.5s all;
+    }
+    li:hover a {
+      opacity: 0.6;
+      font-size: 0.9rem;
+      transition: 1s all;
     }
   }
   ::ng-deep button {
