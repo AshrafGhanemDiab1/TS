@@ -1,0 +1,18 @@
+@if(careers$ | async ; as careers){
+<div class="tahalof-container">
+  <div class="careers-header">
+    <div class="row">
+      @for (careers of careers.results; track careers) {
+      <div class="col-lg-4 col-md-12">
+        <div class="box">
+          <div class="hover"></div>
+          <h2>{{ careers.job_title }}</h2>
+          <p>{{ careers.job_description | subText }}</p>
+          <app-button> Apply </app-button>
+        </div>
+      </div>
+      }
+    </div>
+  </div>
+</div>
+}

@@ -1,3 +1,4 @@
+import { careers } from './components/careers/careers.routes';
 import { Routes } from '@angular/router';
 import { LayoutComponent } from './components/layout/layout.component';
 
@@ -37,6 +38,11 @@ export const routes: Routes = [
         path: 'news',
         loadChildren: () =>
           import('./components/news/news.routes').then((m) => m.News),
+      },
+      {
+        path: 'careers',
+        loadChildren: () =>
+          import('./components/careers/careers.routes').then((m) => m.careers),
       },
     ],
   },

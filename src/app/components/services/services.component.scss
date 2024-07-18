@@ -1,5 +1,7 @@
+:host ::ng-deep .tahalof-container {
+  padding: 0 !important;
+}
 .services-header {
-  margin-bottom: 1.5rem;
   .services-content {
     p {
       max-width: 800px;
