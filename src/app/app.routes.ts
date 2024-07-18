@@ -33,6 +33,11 @@ export const routes: Routes = [
             (m) => m.Hospitals
           ),
       },
+      {
+        path: 'news',
+        loadChildren: () =>
+          import('./components/news/news.routes').then((m) => m.News),
+      },
     ],
   },
 ];

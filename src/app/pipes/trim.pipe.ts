@@ -7,7 +7,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class SubTextPipe implements PipeTransform {
   transform(value: string, ...args: unknown[]): unknown {
     if (value.length > 200) {
-      return value.slice(0, 79) + ' ...';
+      return value.slice(0, 70) + ' ...';
     }
     return value;
   }

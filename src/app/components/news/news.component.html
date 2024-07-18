@@ -1,0 +1,25 @@
+@if (news$ | async ; as news) {
+<div class="tahalof-container">
+  <div class="row">
+    @for(result of news.news.results ; track result ){
+    <div class="col-lg-6 col-md-12 my-3">
+      <div class="news-content-img d-flex justify-content-center">
+        <div class="news-img">
+          <img [src]="imageUrl + result.main_image" alt="" />
+        </div>
+        <div class="news-content">
+          <div class="hover"></div>
+          <h2>
+            <span><img [src]="imageUrl + result.news_svg" alt="" /></span>
+            {{ result.created_at }}
+          </h2>
+          <h3>{{ result.main_title }}</h3>
+          <p>{{ result.main_description | subText }}</p>
+          <app-button>Read More</app-button>
+        </div>
+      </div>
+    </div>
+    }
+  </div>
+</div>
+}
