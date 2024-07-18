@@ -1,5 +1,5 @@
 @if (news$ | async ; as news) {
-<div class="tahalof-container">
+<div class="header">
   <div class="row">
     @for(result of news.news.results ; track result ){
     <div class="col-lg-6 col-md-12 my-3">
@@ -22,4 +22,5 @@
     }
   </div>
 </div>
+
 }

@@ -1,16 +1,13 @@
 import { HttpClient } from '@angular/common/http';
 import {
   AfterViewInit,
-  ChangeDetectionStrategy,
   Component,
   ElementRef,
   inject,
   Input,
-  input,
   OnInit,
   signal,
   ViewChild,
-  viewChild,
 } from '@angular/core';
 import { Services } from '../models/services';
 import { ActivatedRoute } from '@angular/router';
