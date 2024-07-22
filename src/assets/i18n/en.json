@@ -20,5 +20,62 @@
   "FOOTER": {
     "NEWSLATTER": "Get our latest news",
     "SUBSCRIBE": "Subscribe"
+  },
+  "CAREERS": {
+    "APPLY": "Apply",
+    "SUBMIT": "Submit",
+    "JOB_DESCRIPTION": "Job Description",
+    "JOB_REQURIMENTS": "Job Requirements",
+    "FILL_YOU_FORM": "Fill your form now"
+  },
+  "SERVICES": {
+    "SERVICE_DETAILS": "Service details",
+    "LOAD_MORE": "load more"
+  },
+
+  "HOSPITALS": {
+    "ALL_HOSPITALS": "All hospitals"
+  },
+
+  "LABELS": {
+    "NAME": "Name",
+    "E_MAIL": "E-mail",
+    "PHONE": "Phone",
+    "COUNRTY": "Country",
+    "ATTACH_FILES": "Attach files",
+    "SUBJECT": "Subject",
+    "MESSAGE": "Message"
+  },
+  "NEWS": {
+    "READ_MORE": "Read More",
+    "ALL_NEWS": "All News"
+  },
+  "ERROR_PAGES": {
+    "HOME": "Home",
+    "BACK": "Back",
+    "ACCESS_DENIED": "Access Denied",
+    "NOT_FOUND": "Page Not Found",
+    "NOT_FOUND_MAIN_TITLE": "Ooops",
+    "NOT_FOUND_TITLE": "This page is not found, Please try again.",
+    "WE_HELP": "The page that you are trying to access does not exist.",
+    "SERVER_ERROR": "Server Error",
+    "WRONG_SERVER": "Please try again later."
+  },
+  "VALIDATION_MESSAGES": {
+    "EMAIL_REQUIRED": "Email Required",
+    "EMAIL_INVALID": "Please Enter Valid Email Address",
+    "INVALID_NUMBER": "Please Enter Valid Number",
+    "COUNTRY_REQUIRED": "Country Required",
+    "INVALID_ENGLISH": "Allowed English Characters Only",
+    "INVALID_ARABIC": "Allowed Arabic Characters Only",
+    "INVALID_EN_ALPHA_NUM": "Allowed Only Numbers And English Characters",
+    "INVALID_AR_ALPHA_NUM": "Allowed Only Numbers And Arabic Characters",
+    "INVALID_PHONE_NUMBER": "Please Enter Valid Phone Number",
+    "FIRST_NAME_REQUIRED": "Name Required",
+    "LAST_NAME_REQUIRED": "Last Name Required",
+    "PHONE_NUMBER_REQUIRED": "Phone Number Required",
+    "INVALID_AR_EN": "Allowed English & Arabic Characters Only",
+    "CV": "CV Required",
+    "MESSAGE": "please Enter Your Message"
   }
 }

@@ -1,1 +1,117 @@
-<p>contact-us works!</p>
+@if(contactUs$ | async ; as contact){
+<div class="container-fluid bg-main overflow-hidden">
+  <div class="row justify-content-center">
+    <div class="col-md-12 col-lg-6">
+      <form class="h-100" (ngSubmit)="onSubmit()" [formGroup]="contactForm">
+        <div class="form-content h-100">
+          <div class="row h-100">
+            <div class="col-6">
+              <div class="form-edits">
+                <p>
+                  <mat-form-field>
+                    <mat-label>{{ "LABELS.NAME" | translate }}</mat-label>
+                    <input type="text" formControlName="name" matInput />
+                    @if(contactForm.controls["name"].dirty
+                    ||contactForm.controls["name"].invalid ){
+                    <mat-error>{{
+                      "VALIDATION_MESSAGES.FIRST_NAME_REQUIRED" | translate
+                    }}</mat-error>
+                    }
+                  </mat-form-field>
+                </p>
+              </div>
+              <div class="form-edits">
+                <p>
+                  <mat-form-field>
+                    <mat-label>{{ "LABELS.PHONE" | translate }}</mat-label>
+                    <input type="number" formControlName="phone" matInput />
+                    @if(contactForm.controls["phone"].validator ){
+                    <mat-error>{{
+                      "VALIDATION_MESSAGES.INVALID_PHONE_NUMBER" | translate
+                    }}</mat-error>
+                    }
+                  </mat-form-field>
+                </p>
+              </div>
+              <div class="form-edits">
+                <p>
+                  <mat-form-field>
+                    <mat-label>{{ "LABELS.MESSAGE" | translate }}</mat-label>
+                    <input type="text" matInput formControlName="message" />
+                    @if(contactForm.controls["message"].dirty
+                    ||contactForm.controls["message"].invalid ){
+                    <mat-error>{{
+                      "VALIDATION_MESSAGES.MESSAGE" | translate
+                    }}</mat-error>
+                    }
+                  </mat-form-field>
+                </p>
+              </div>
+              <app-button>{{ "CAREERS.APPLY" | translate }}</app-button>
+            </div>
+            <div class="col-6">
+              <div class="form-edits">
+                <p>
+                  <mat-form-field>
+                    <mat-label>{{ "LABELS.E_MAIL" | translate }}</mat-label>
+                    <input type="email" matInput formControlName="email" />
+                    @if(contactForm.controls["email"].dirty
+                    ||contactForm.controls["email"].invalid ){
+                    <mat-error>{{
+                      "VALIDATION_MESSAGES.EMAIL_INVALID" | translate
+                    }}</mat-error>
+                    }
+                  </mat-form-field>
+                </p>
+              </div>
+              <div class="form-edits">
+                <p>
+                  <mat-form-field>
+                    <mat-label>{{ "LABELS.SUBJECT" | translate }}</mat-label>
+                    <input type="text" matInput formControlName="subject" />
+                    @if(contactForm.controls["subject"].dirty
+                    ||contactForm.controls["subject"].invalid ){
+                    <mat-error>{{
+                      "VALIDATION_MESSAGES.EMAIL_INVALID" | translate
+                    }}</mat-error>
+                    }
+                  </mat-form-field>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="col-md-12 col-lg-6">
+      <div class="image-content">
+        <div class="image">
+          <div class="overlay"></div>
+          <div
+            class="background-img"
+            [ngStyle]="{
+              'background-image': 'url(' + imgUrl + contact.main_image + ')'
+            }"
+          ></div>
+        </div>
+        <div class="content">
+          <h3>{{ contact.title }}</h3>
+          <h5>{{ contact.sub_title }}</h5>
+          <p>
+            <span><img [src]="imgUrl + contact.location_svg" alt="" /></span>
+            {{ contact.location }}
+          </p>
+          <p>
+            <span><img [src]="imgUrl + contact.call_svg" alt="" /></span>
+            {{ contact.call }}
+          </p>
+          <p>
+            <span><img [src]="imgUrl + contact.mail_svg" alt="" /></span>
+            {{ contact.mail }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+}

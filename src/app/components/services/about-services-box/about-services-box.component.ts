@@ -6,11 +6,12 @@ import { CommonModule } from '@angular/common';
 import { Card } from '../models/card';
 import { SubTextPipe } from '../../../pipes/trim.pipe';
 import { environment } from '../../../environments/environment';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'services-box',
   standalone: true,
-  imports: [CommonModule, SubTextPipe],
+  imports: [CommonModule, SubTextPipe, TranslateModule],
   templateUrl: './about-services-box.component.html',
   styleUrl: './about-services-box.component.scss',
 })

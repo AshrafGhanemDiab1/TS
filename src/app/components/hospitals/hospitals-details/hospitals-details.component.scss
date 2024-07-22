@@ -1,7 +1,7 @@
 @import "../../../../app/styles/base/colors";
 .details-header {
   margin-bottom: 4rem;
-  overflow: hidden;
+  width: 100%;
   .background-img {
     background-position: center !important;
     background-size: 100% 100% !important;
@@ -36,6 +36,7 @@
     }
     .row {
       height: 100% !important;
+      margin-left: calc(0 * var(--bs-gutter-x)) !important;
     }
   }
   .img-content-section {

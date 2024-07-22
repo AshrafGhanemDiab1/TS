@@ -1,4 +1,4 @@
-import { Lang } from '../../app/translate/translate/language.enum';
+import { Lang } from './../../app/translate/translate/language';
 
 export const AppConfig = {
   appVersion: '1.0.0',

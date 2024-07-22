@@ -10,4 +10,5 @@ export class Endpoints {
   public static readonly SERVICE = baseUrl + '/api/service/';
   public static readonly ABOUT = baseUrl + '/api/about-us/';
   public static readonly CAREER = baseUrl + '/api/career/';
+  public static readonly CONTACT = baseUrl + '/api/contact-us/';
 }

@@ -2,7 +2,7 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-5 ms-auto">
-        <img src="../../../assets/images/logo.png" alt="" />
+        <img routerLink="home" src="../../../assets/images/logo.png" alt="" />
       </div>
       <div class="col-7 m-auto">
         <div class="content">
@@ -38,7 +38,9 @@
                   "MENU.CAREER" | translate
                 }}</a>
               </li>
-              <app-button>{{ "MENU.CONTACT_US" | translate }}</app-button>
+              <app-button routerLink="contact">{{
+                "MENU.CONTACT_US" | translate
+              }}</app-button>
               <li (click)="onChangeLang()">{{ "MENU.LANG" | translate }}</li>
             </ul>
           </div>

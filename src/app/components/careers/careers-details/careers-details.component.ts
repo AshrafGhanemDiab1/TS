@@ -69,6 +69,7 @@ export class CareersDetailsComponent implements OnInit, OnDestroy {
     });
     this.InitForm();
   }
+
   destroy$ = new Subject<void>();
   ngOnDestroy(): void {
     this.destroy$.next();
@@ -104,7 +105,6 @@ export class CareersDetailsComponent implements OnInit, OnDestroy {
       });
   }
   handleFileInput(ev: any) {
-    console.log(ev);
     this.careersForm.controls['cv'].setValue(ev.target.files[0]);
     this.careersForm.controls['cv_name'].setValue(ev.target.files[0].name);
 

@@ -20,5 +20,62 @@
   "FOOTER": {
     "NEWSLATTER": "احصل على أحدث إصداراتنا",
     "SUBSCRIBE": "اشتراك"
+  },
+  "CAREERS": {
+    "APPLY": "موافق",
+    "SUBMIT": "ارسال",
+    "JOB_DESCRIPTION": "المسمى الوظيفي",
+    "JOB_REQURIMENTS": "متطلبات العمل",
+    "FILL_YOU_FORM": "املأ النموذج الخاص بك الآن"
+  },
+  "SERVICES": {
+    "SERVICE_DETAILS": "تفاصيل الخدمة",
+    "LOAD_MORE": "تحميل المزيد"
+  },
+  "HOSPITALS": {
+    "ALL_HOSPITALS": "كل المستشفيات"
+  },
+
+  "LABELS": {
+    "NAME": "الاسم",
+    "E_MAIL": "البريد الالكارونى",
+    "PHONE": "رقم الموبيل",
+    "COUNRTY": "البلد",
+    "ATTACH_FILES": "ملف",
+    "SUBJECT": "الموضوع",
+    "MESSAGE": "الرساله"
+  },
+
+  "NEWS": {
+    "READ_MORE": "اقرأ المزيد",
+    "ALL_NEWS": "كل الاحبار"
+  },
+  "ERROR_PAGES": {
+    "HOME": "الرئيسية",
+    "BACK": "رجوع",
+    "ACCESS_DENIED": "غير مسموح",
+    "NOT_FOUND": "صفحة خطأ",
+    "NOT_FOUND_MAIN_TITLE": "اوووبس",
+    "NOT_FOUND_TITLE": "لم يتم العثور على هذه الصفحة ، يرجى المحاولة مرة أخرى.",
+    "WE_HELP": "الصفحة التى تبحث عنها غير موجودة.",
+    "SERVER_ERROR": "مشكلة فى الخادم",
+    "WRONG_SERVER": "برجاء المحاولة فى وقت لاحق."
+  },
+  "VALIDATION_MESSAGES": {
+    "EMAIL_REQUIRED": "البريد الإلكترونى مطلوب",
+    "EMAIL_INVALID": "من فضلك أكتب بريد إلكترونى صحيح",
+    "INVALID_NUMBER": "من فضلك أكتب رقم صحيح",
+    "COUNTRY_REQUIRED": "الدلوة مطلوبه",
+    "INVALID_ENGLISH": "مسموح بأحرف أنجليزية فقط",
+    "INVALID_ARABIC": "مسموح بأحرف عربية فقط",
+    "INVALID_EN_ALPHA_NUM": "مسموح فقط بأرقام وحروف إنجليزية",
+    "INVALID_AR_ALPHA_NUM": "مسموح فقط بأرقام وحروف عربية",
+    "INVALID_PHONE_NUMBER": "من فضلك أكتب رقم هاتف صحيح",
+    "FIRST_NAME_REQUIRED": "الأسم  مطلوب",
+    "LAST_NAME_REQUIRED": "الأسم الثانى مطلوب",
+    "PHONE_NUMBER_REQUIRED": "رقم الهاتف مطلوب",
+    "INVALID_AR_EN": "مسموح بالحروف الإنجليزية والعربية فقط",
+    "CV": "السيرة الذاتية مطلوبه",
+    "MESSAGE": "من فضلك ادخل رسالتك"
   }
 }

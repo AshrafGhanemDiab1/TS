@@ -44,6 +44,13 @@ export const routes: Routes = [
         loadChildren: () =>
           import('./components/careers/careers.routes').then((m) => m.careers),
       },
+      {
+        path: 'contact',
+        loadChildren: () =>
+          import('./components/contact-us/contact.routes').then(
+            (m) => m.contact
+          ),
+      },
     ],
   },
 ];

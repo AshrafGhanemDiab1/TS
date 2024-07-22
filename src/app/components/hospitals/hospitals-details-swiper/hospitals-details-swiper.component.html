@@ -1,6 +1,7 @@
-<div class="tahalof-container">
-  <h2>{{ hospitalDetails.media_title }}</h2>
-</div>
+<div class="tahalof-container"></div>
+@if (hospitalDetails.media) {
+<h2>{{ hospitalDetails.media_title }}</h2>
+
 <swiper-container
   navigation="true"
   slides-per-view="1.5"
@@ -19,3 +20,4 @@
 
   }
 </swiper-container>
+}

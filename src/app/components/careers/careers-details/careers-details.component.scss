@@ -35,19 +35,20 @@
     resize: horizontal;
     border: 1px solid $white;
   }
-
-  input:focus {
-    border-bottom: 1px solid $blue-light;
-  }
-  .pose {
-    position: absolute;
-    left: 0;
-    opacity: 0;
-  }
-  .posee {
-    position: absolute;
-    left: 95%;
-    top: 13px;
+  .sbg {
+    input:focus {
+      border-bottom: 1px solid $blue-light;
+    }
+    .pose {
+      position: absolute;
+      left: 0;
+      opacity: 0;
+    }
+    .posee {
+      position: absolute;
+      left: 95%;
+      top: 13px;
+    }
   }
   button {
     margin-inline-end: 2.5rem;
