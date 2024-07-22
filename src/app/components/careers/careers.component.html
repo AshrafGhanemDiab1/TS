@@ -8,7 +8,9 @@
           <div class="hover"></div>
           <h2>{{ careers.job_title }}</h2>
           <p>{{ careers.job_description | subText }}</p>
-          <app-button> Apply </app-button>
+          <app-button routerLink="{{ link }}/{{ careers.id }}">
+            Apply
+          </app-button>
         </div>
       </div>
       }
