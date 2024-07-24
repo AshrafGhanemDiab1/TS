@@ -1,5 +1,10 @@
 @import "../../../app/styles/base/colors";
 
+.content {
+  h2 {
+    max-width: 700px !important;
+  }
+}
 .content-img {
   width: 100%;
   margin-top: 5rem;
@@ -40,4 +45,9 @@
 }
 .content-img:hover .logo img {
   opacity: 1;
+}
+::ng-deep {
+  .tahalof-container {
+    padding: 0 0 7rem 0 !important;
+  }
 }

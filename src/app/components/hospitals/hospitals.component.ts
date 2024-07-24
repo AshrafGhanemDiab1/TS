@@ -14,11 +14,13 @@ import { Endpoints } from '../../../app/environments/endpoints';
 import { CommonModule } from '@angular/common';
 import { environment } from '../../../app/environments/environment';
 import { ActivatedRoute, RouterLink } from '@angular/router';
+import { NavgateComponent } from '../layout/navgate/navgate.component';
+import { LoaderComponent } from '../layout/loader/loader.component';
 
 @Component({
   selector: 'app-hospitals',
   standalone: true,
-  imports: [CommonModule, RouterLink],
+  imports: [CommonModule, RouterLink, NavgateComponent, LoaderComponent],
   templateUrl: './hospitals.component.html',
   styleUrl: './hospitals.component.scss',
 })

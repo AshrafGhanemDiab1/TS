@@ -22,6 +22,7 @@ import {
   ReactiveFormsModule,
   Validators,
 } from '@angular/forms';
+
 import { MatError, MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
@@ -31,6 +32,7 @@ import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { ButtonComponent } from '../shared/button/button.component';
 import { CustomValidatorsService } from '../services/custom-validators/custom-validators.service';
 import { TranslateModule } from '@ngx-translate/core';
+import { LoaderComponent } from '../layout/loader/loader.component';
 
 @Component({
   selector: 'app-contact-us',
@@ -47,6 +49,7 @@ import { TranslateModule } from '@ngx-translate/core';
     MatError,
     ButtonComponent,
     TranslateModule,
+    LoaderComponent,
   ],
   templateUrl: './contact-us.component.html',
   styleUrl: './contact-us.component.scss',
@@ -70,6 +73,7 @@ export class ContactUsComponent implements OnInit {
     this.destroy$.next();
     this.destroy$.complete();
   }
+
   ngOnInit(): void {
     this.contactUs$ = this.httpservice.get<Contact>(Endpoints.CONTACT);
     this.contactForm = this.fb.group({

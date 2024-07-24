@@ -84,12 +84,14 @@ body {
   margin: 0 auto;
   padding: 4.5rem 0;
 }
-
+.colld {
+  opacity: 0.6;
+}
 /* Scrollbar Styles Start Here */
 /* width */
 ::-webkit-scrollbar {
-  width: 5px;
-  height: 5px;
+  width: 20px;
+  height: 8px;
 }
 /* Track */
 ::-webkit-scrollbar-track {

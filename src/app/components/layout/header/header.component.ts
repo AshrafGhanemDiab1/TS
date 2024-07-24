@@ -14,6 +14,7 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 import { ButtonComponent } from '../../shared/button/button.component';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { TranslationService } from '../../../../app/translate/translate/translation.service';
+import { LoaderComponent } from '../loader/loader.component';
 
 @Component({
   selector: 'app-header',
@@ -25,6 +26,7 @@ import { TranslationService } from '../../../../app/translate/translate/translat
     ButtonComponent,
     TranslateModule,
     TranslateModule,
+    LoaderComponent,
   ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',

@@ -7,6 +7,8 @@ import { Services, ServicesList } from './models/services';
 import { ServicesHelpComponent } from './services-help/services-help.component';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { Endpoints } from '../../environments/endpoints';
+import { NavgateComponent } from '../layout/navgate/navgate.component';
+import { LoaderComponent } from '../layout/loader/loader.component';
 @Component({
   selector: 'app-services',
   standalone: true,
@@ -15,6 +17,8 @@ import { Endpoints } from '../../environments/endpoints';
     AboutServicesBoxComponent,
     ServicesHelpComponent,
     RouterLink,
+    NavgateComponent,
+    LoaderComponent,
   ],
   templateUrl: './services.component.html',
   styleUrl: './services.component.scss',

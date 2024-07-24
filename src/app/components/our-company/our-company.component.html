@@ -1,8 +1,11 @@
 @if (aboutUs$ | async ; as aboutUs) {
+<app-navgate route="/company">Our Company</app-navgate>
 <app-company-header [aboutUs]="aboutUs"></app-company-header>
 <app-years-of-experience [aboutUs]="aboutUs"></app-years-of-experience>
 <app-achirvements [aboutUs]="aboutUs"></app-achirvements>
 <app-our-history [aboutUs]="aboutUs"></app-our-history>
 <app-our-vision [aboutUs]="aboutUs"></app-our-vision>
 <app-our-values [aboutUs]="aboutUs"></app-our-values>
+} @else {
+<app-loader></app-loader>
 }

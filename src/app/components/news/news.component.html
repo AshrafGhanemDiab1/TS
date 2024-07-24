@@ -1,4 +1,6 @@
 @if (news$ | async ; as news) {
+<app-navgate route="/news">news</app-navgate>
+
 <div class="header">
   <div class="row">
     @for(result of news.news.results ; track result ){
@@ -25,4 +27,6 @@
   </div>
 </div>
 
+} @else {
+<app-loader></app-loader>
 }

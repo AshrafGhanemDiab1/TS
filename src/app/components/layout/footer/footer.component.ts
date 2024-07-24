@@ -7,6 +7,7 @@ import { CommonModule } from '@angular/common';
 import { ButtonComponent } from '../../shared/button/button.component';
 import { RouterLink } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
+import { LoaderComponent } from '../loader/loader.component';
 
 @Component({
   selector: 'app-footer',
@@ -17,6 +18,7 @@ import { TranslateModule } from '@ngx-translate/core';
     RouterLink,
     TranslateModule,
     TranslateModule,
+    LoaderComponent,
   ],
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.scss',

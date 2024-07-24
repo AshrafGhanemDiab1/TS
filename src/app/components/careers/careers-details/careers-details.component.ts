@@ -33,11 +33,18 @@ import { ButtonComponent } from '../../shared/button/button.component';
 import { CustomValidators } from 'ngx-custom-validators';
 import { CustomValidatorsService } from '../../services/custom-validators/custom-validators.service';
 import validator from 'validator';
+import { LoaderComponent } from '../../layout/loader/loader.component';
 
 @Component({
   selector: 'app-careers-details',
   standalone: true,
-  imports: [CommonModule, FormsModule, ReactiveFormsModule, ButtonComponent],
+  imports: [
+    CommonModule,
+    FormsModule,
+    ReactiveFormsModule,
+    ButtonComponent,
+    LoaderComponent,
+  ],
   templateUrl: './careers-details.component.html',
   styleUrl: './careers-details.component.scss',
   providers: [

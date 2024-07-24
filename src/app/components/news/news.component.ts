@@ -9,11 +9,20 @@ import { environment } from '../../environments/environment';
 import { SubTextPipe } from '../../pipes/trim.pipe';
 import { ButtonComponent } from '../shared/button/button.component';
 import { RouterLink } from '@angular/router';
+import { NavgateComponent } from '../layout/navgate/navgate.component';
+import { LoaderComponent } from '../layout/loader/loader.component';
 
 @Component({
   selector: 'app-news',
   standalone: true,
-  imports: [CommonModule, SubTextPipe, ButtonComponent, RouterLink],
+  imports: [
+    CommonModule,
+    SubTextPipe,
+    ButtonComponent,
+    RouterLink,
+    NavgateComponent,
+    LoaderComponent,
+  ],
   templateUrl: './news.component.html',
   styleUrl: './news.component.scss',
 })

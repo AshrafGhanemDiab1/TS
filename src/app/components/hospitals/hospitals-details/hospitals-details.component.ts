@@ -15,6 +15,7 @@ import { CommonModule } from '@angular/common';
 import { environment } from '../../../../app/environments/environment';
 import { HospitalDetailsSection2Component } from '../hospital-details-section-2/hospital-details-section-2.component';
 import { HospitalsDetailsSwiperComponent } from '../hospitals-details-swiper/hospitals-details-swiper.component';
+import { NavgateComponent } from '../../layout/navgate/navgate.component';
 
 @Component({
   selector: 'app-hospitals-details',
@@ -23,6 +24,7 @@ import { HospitalsDetailsSwiperComponent } from '../hospitals-details-swiper/hos
     CommonModule,
     HospitalDetailsSection2Component,
     HospitalsDetailsSwiperComponent,
+    NavgateComponent,
   ],
   templateUrl: './hospitals-details.component.html',
   styleUrl: './hospitals-details.component.scss',

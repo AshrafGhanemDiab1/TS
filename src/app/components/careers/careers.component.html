@@ -1,4 +1,6 @@
 @if(careers$ | async ; as careers){
+<app-navgate route="/careers">careers</app-navgate>
+
 <div class="tahalof-container">
   <div class="careers-header">
     <div class="row">
@@ -17,4 +19,6 @@
     </div>
   </div>
 </div>
+}@else {
+<app-loader></app-loader>
 }

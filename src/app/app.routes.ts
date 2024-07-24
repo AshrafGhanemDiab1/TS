@@ -1,7 +1,6 @@
-import { careers } from './components/careers/careers.routes';
 import { Routes } from '@angular/router';
 import { LayoutComponent } from './components/layout/layout.component';
-
+import { NotFoundComponent } from './components/layout/404/404.component';
 export const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   {
@@ -53,4 +52,5 @@ export const routes: Routes = [
       },
     ],
   },
+  { path: '**', pathMatch: 'full', component: NotFoundComponent },
 ];

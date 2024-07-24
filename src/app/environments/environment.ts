@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  baseUrl: 'http://staging.freaksrepublic.com:8066'
+  baseUrl: 'http://staging.freaksrepublic.com:8066',
 };
 
 /*

@@ -18,11 +18,19 @@ import { ButtonComponent } from '../../shared/button/button.component';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { Endpoints } from '../../../environments/endpoints';
 import { environment } from '../../../environments/environment';
+import { NavgateComponent } from '../../layout/navgate/navgate.component';
+import { LoaderComponent } from '../../layout/loader/loader.component';
 
 @Component({
   selector: 'app-services-details',
   standalone: true,
-  imports: [CommonModule, ButtonComponent, TranslateModule],
+  imports: [
+    CommonModule,
+    ButtonComponent,
+    TranslateModule,
+    NavgateComponent,
+    LoaderComponent,
+  ],
   templateUrl: './services-details.component.html',
   styleUrl: './services-details.component.scss',
 })

@@ -11,6 +11,9 @@ import { OurVisionComponent } from './our-vision/our-vision.component';
 import { OurHistoryComponent } from './our-history/our-history.component';
 import { OurValuesComponent } from './our-values/our-values.component';
 import { Endpoints } from '../../environments/endpoints';
+import { NavgateComponent } from '../layout/navgate/navgate.component';
+import { RouterLink } from '@angular/router';
+import { LoaderComponent } from '../layout/loader/loader.component';
 
 @Component({
   selector: 'app-our-company',
@@ -23,6 +26,9 @@ import { Endpoints } from '../../environments/endpoints';
     OurVisionComponent,
     OurHistoryComponent,
     OurValuesComponent,
+    NavgateComponent,
+    RouterLink,
+    LoaderComponent,
   ],
   templateUrl: './our-company.component.html',
   styleUrl: './our-company.component.scss',

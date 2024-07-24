@@ -1,9 +1,10 @@
 @if (services$ | async ; as services) {
-<div class="tahalof-container mt-5 services-header">
+<app-navgate route="/services">services</app-navgate>
+<div class="tahalof-container services-header">
   <div class="row">
     <div class="col-12">
       <div class="services-content">
-        <h2 class="mt-5">{{ services.main_title }}</h2>
+        <h2>{{ services.main_title }}</h2>
         <p>{{ services.main_description }}</p>
       </div>
     </div>
@@ -28,4 +29,6 @@
   [discription]="services.contact_description"
   [button]="services.contact_button"
 ></app-services-help>
+} @else {
+<app-loader></app-loader>
 }

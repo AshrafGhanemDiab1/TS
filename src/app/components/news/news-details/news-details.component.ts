@@ -6,11 +6,13 @@ import { Endpoints } from '../../../environments/endpoints';
 import { ActivatedRoute } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { environment } from '../../../environments/environment';
+import { NavgateComponent } from '../../layout/navgate/navgate.component';
+import { LoaderComponent } from '../../layout/loader/loader.component';
 
 @Component({
   selector: 'app-news-details',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, NavgateComponent, LoaderComponent],
   templateUrl: './news-details.component.html',
   styleUrl: './news-details.component.scss',
 })

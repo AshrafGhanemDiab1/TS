@@ -1,0 +1,33 @@
+@import "../../../styles/base/colors";
+.images {
+  width: 100%;
+  position: relative;
+  img {
+    width: 100%;
+    height: calc(100vh - 118.51px);
+    object-fit: cover;
+  }
+
+  position: relative;
+  --swiper-pagination-color: #034773;
+  --swiper-pagination-bullet-inactive-color: white;
+  --swiper-pagination-bullet-inactive-opacity: 0.5;
+  --swiper-pagination-bullet-height: 14px;
+  --swiper-pagination-bullet-width: 14px;
+  @media screen and (max-width: 450px) {
+    --swiper-pagination-bullet-height: 10px;
+    --swiper-pagination-bullet-width: 10px;
+  }
+  .content {
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    left: 5%;
+  }
+  h2 {
+    font-size: 1.5rem !important;
+    max-width: 400px !important;
+    font-weight: 800;
+    line-height: 1.7rem !important;
+  }
+}

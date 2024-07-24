@@ -1,4 +1,8 @@
 @if (hospitalsDetails$ | async ; as hospitalsDetails){
+<app-navgate route="/hospitals"
+  >hospitals <span class="mx-1">></span
+  ><span class="ms-1"> {{ hospitalsDetails.name }}</span></app-navgate
+>
 <div class="details-header">
   <div
     class="background-img"
@@ -36,4 +40,6 @@
 <app-hospitals-details-swiper
   [hospitalDetails]="hospitalsDetails"
 ></app-hospitals-details-swiper>
+} @else {
+<app-loader></app-loader>
 }

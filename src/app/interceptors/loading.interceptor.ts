@@ -6,7 +6,7 @@ import {
   HttpRequest,
 } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { LoaderService } from '../../shared/components/loader/loader.service';
+import { LoaderService } from '../Services/loader/loader.service';
 
 @Injectable()
 export class LoadingInterceptor implements HttpInterceptor {
@@ -14,7 +14,7 @@ export class LoadingInterceptor implements HttpInterceptor {
 
   intercept(
     request: HttpRequest<unknown>,
-    next: HttpHandler,
+    next: HttpHandler
   ): Observable<HttpEvent<unknown>> {
     return this.loaderService.showLoaderUntilCompleted(next.handle(request));
     // return ;

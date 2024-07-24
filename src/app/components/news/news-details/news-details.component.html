@@ -1,4 +1,8 @@
 @if(newsDetails$ | async ; as newsD){
+<app-navgate route="/news"
+  >news <span class="mx-1">></span
+  ><span class="ms-1"> {{ newsD.main_title }}</span></app-navgate
+>
 <div class="tahalof-container">
   <div class="row">
     <div class="col-md-12 col-lg-4">
@@ -32,4 +36,6 @@
     </div>
   </div>
 </div>
+} @else {
+<app-loader></app-loader>
 }

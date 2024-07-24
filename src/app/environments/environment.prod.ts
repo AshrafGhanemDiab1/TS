@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  baseUrl: 'http://staging.freaksrepublic.com:8066'
+  baseUrl: 'http://staging.freaksrepublic.com:8066',
 };

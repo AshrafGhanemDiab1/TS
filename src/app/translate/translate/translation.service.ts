@@ -2,7 +2,6 @@ import { Injectable, Renderer2, RendererFactory2, signal } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { Lang } from './language';
 import { LocalStorageService } from './local-storage.service';
-
 @Injectable({
   providedIn: 'root',
 })

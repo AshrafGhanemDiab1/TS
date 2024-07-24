@@ -8,11 +8,20 @@ import { CommonModule } from '@angular/common';
 import { ButtonComponent } from '../shared/button/button.component';
 import { SubTextPipe } from '../../pipes/trim.pipe';
 import { RouterLink } from '@angular/router';
+import { NavgateComponent } from '../layout/navgate/navgate.component';
+import { LoaderComponent } from '../layout/loader/loader.component';
 
 @Component({
   selector: 'app-careers',
   standalone: true,
-  imports: [CommonModule, ButtonComponent, SubTextPipe, RouterLink],
+  imports: [
+    CommonModule,
+    ButtonComponent,
+    SubTextPipe,
+    RouterLink,
+    NavgateComponent,
+    LoaderComponent,
+  ],
   templateUrl: './careers.component.html',
   styleUrl: './careers.component.scss',
 })

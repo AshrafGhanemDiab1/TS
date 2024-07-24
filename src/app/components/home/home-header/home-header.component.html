@@ -1,0 +1,15 @@
+<div class="images">
+  <swiper-container class="mySwiper" pagination="true">
+    @for (slid of home.sliders; track slid) {
+    <swiper-slide>
+      <div class="image-swipe">
+        <img [src]="imageUrl + slid.image" alt="" />
+      </div>
+      <div class="content">
+        <h2>{{ slid.title }}</h2>
+        <p>{{ slid.description }}</p>
+      </div>
+    </swiper-slide>
+    }
+  </swiper-container>
+</div>
