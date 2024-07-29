@@ -6,17 +6,12 @@
       <h2>{{ hospital.main_title }}</h2>
     </div>
     @for (item of hospital.hospitals.results; track $index) {
-    <div class="col-md-4 col-sm-12">
-      <div #image class="content-img" routerLink="{{ link }}/{{ item.uuid }}">
-        <div class="date">
-          <h4>{{ item.built_year }}</h4>
-        </div>
-        <img [src]="imgUrl + item.image" alt="" />
-        <div class="logo">
-          <img [src]="imgUrl + item.hospital_logo" alt="" />
-        </div>
-        <div class="overlay"></div>
-      </div>
+    <div class="col-md-4 col-sm-12" routerLink="{{ link }}/{{ item.uuid }}">
+      <app-shared-hospital
+        [year]="item.built_year"
+        [imgOne]="item.image"
+        [imgTow]="item.hospital_logo"
+      ></app-shared-hospital>
     </div>
     }
   </div>

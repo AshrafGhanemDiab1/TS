@@ -5,16 +5,20 @@
   align-items: center;
   height: 100vh;
   background-color: $blue-medium-1;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 5555;
 }
 
 .loader {
-  width: 100px;
-  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 50%;
   animation: spin 1s linear infinite;
+  img {
+    width: 100%;
+  }
 }
 
 .inner-circle {

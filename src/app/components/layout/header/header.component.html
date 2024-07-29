@@ -1,12 +1,12 @@
 @if (header$ | async ; as header) {
-<div class="navbar-header">
+<div class="navbar-header position-relative">
   <div class="container-fluid">
     <div class="row">
       <div class="col-5 ms-auto">
         <img routerLink="home" src="../../../assets/images/logo.png" alt="" />
       </div>
       <div class="col-7 m-auto">
-        <div class="content">
+        <div class="content" [class.mobile_menu]="menuValue">
           <div>
             <ul>
               <li>
@@ -39,13 +39,25 @@
                   "MENU.CAREER" | translate
                 }}</a>
               </li>
-              <app-button routerLink="contact">{{
-                "MENU.CONTACT_US" | translate
-              }}</app-button>
+              <div class="share">
+                <app-button routerLink="contact">{{
+                  "MENU.CONTACT_US" | translate
+                }}</app-button>
+              </div>
               <li (click)="onChangeLang()">{{ "MENU.LANG" | translate }}</li>
             </ul>
           </div>
         </div>
+      </div>
+      <div class="menu-icon">
+        <button
+          mat-icon-button
+          class="example-icon"
+          aria-label="Example icon-button with menu icon"
+          (click)="openMenu()"
+        >
+          <mat-icon class="mat-18">menu</mat-icon>
+        </button>
       </div>
     </div>
   </div>

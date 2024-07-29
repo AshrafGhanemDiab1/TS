@@ -16,11 +16,18 @@ import { environment } from '../../../app/environments/environment';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { NavgateComponent } from '../layout/navgate/navgate.component';
 import { LoaderComponent } from '../layout/loader/loader.component';
+import { SharedHospitalComponent } from '../shared/shared-hospital/shared-hospital.component';
 
 @Component({
   selector: 'app-hospitals',
   standalone: true,
-  imports: [CommonModule, RouterLink, NavgateComponent, LoaderComponent],
+  imports: [
+    CommonModule,
+    RouterLink,
+    NavgateComponent,
+    LoaderComponent,
+    SharedHospitalComponent,
+  ],
   templateUrl: './hospitals.component.html',
   styleUrl: './hospitals.component.scss',
 })

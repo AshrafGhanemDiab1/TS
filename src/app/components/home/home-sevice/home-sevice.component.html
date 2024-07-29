@@ -1,0 +1,31 @@
+<div class="tahalof-container">
+  <div class="home-service-header">
+    <div class="row">
+      <div class="col-12">
+        <h2>{{ home.services_title }}</h2>
+      </div>
+      @for (item of home.services; track $index) {
+      <div class="col-lg-4 col-md-12">
+        <div
+          class="service-box-header position-relative"
+          routerLink="{{ link }}/{{ item.uuid }}"
+        >
+          <div class="service-box-header_img">
+            <img [src]="imgUrl + item.main_image" alt="" />
+            <div class="overlay"></div>
+          </div>
+          <div class="service-box-header_content">
+            <h4>{{ item.name }}</h4>
+            <p>{{ item.description | subText }}</p>
+          </div>
+        </div>
+      </div>
+      }
+      <div class="col-12">
+        <div class="red-more-btn">
+          <app-button routerLink="/services">Read More</app-button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

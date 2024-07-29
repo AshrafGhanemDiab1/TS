@@ -3,11 +3,13 @@
     @for (slid of home.sliders; track slid) {
     <swiper-slide>
       <div class="image-swipe">
+        <div class="overlay"></div>
         <img [src]="imageUrl + slid.image" alt="" />
       </div>
       <div class="content">
         <h2>{{ slid.title }}</h2>
         <p>{{ slid.description }}</p>
+        <app-button routerLink="/services">Services</app-button>
       </div>
     </swiper-slide>
     }

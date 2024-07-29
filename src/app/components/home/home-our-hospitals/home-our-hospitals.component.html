@@ -1,0 +1,20 @@
+<div class="background">
+  <div class="tahalof-container">
+    <div class="row">
+      <div class="content">
+        <h2>{{ home.hospitals_title }}</h2>
+      </div>
+      @for (item of home.hospitals; track $index) {
+      <div class="col-md-4 col-sm-12" routerLink="{{ link }}/{{ item.uuid }}">
+        <app-shared-hospital [imgOne]="item.image">
+          <div class="content-img">
+            <h2>{{ item.name }}</h2>
+            <p>{{ item.description | subText }}</p>
+          </div>
+        </app-shared-hospital>
+      </div>
+      }
+      <app-button class="mt-5" routerLink="/hospitals">Read More</app-button>
+    </div>
+  </div>
+</div>

@@ -14,6 +14,9 @@
   margin: auto;
   padding: 0.8rem 0;
   margin-top: 3rem;
+  @media screen and (max-width: 450px) {
+    width: 100%;
+  }
 }
 .careers-form {
   padding: 4rem;
@@ -48,6 +51,10 @@
       position: absolute;
       left: 95%;
       top: 13px;
+      @media screen and (max-width: 450px) {
+        left: 80%;
+        top: 8px;
+      }
     }
   }
   button {
@@ -56,5 +63,9 @@
     background-color: $blue-medium-2 !important;
     color: $white !important;
     width: 25%;
+    @media screen and (max-width: 450px) {
+      width: 100%;
+      margin: auto;
+    }
   }
 }

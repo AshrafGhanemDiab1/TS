@@ -1,3 +1,8 @@
 @if (home$ | async ; as home) {
 <app-home-header [home]="home"></app-home-header>
+<app-home-our-hospitals [home]="home"></app-home-our-hospitals>
+<app-home-sevice [home]="home"></app-home-sevice>
+<app-home-news [home]="home"></app-home-news>
+} @else {
+<app-loader></app-loader>
 }

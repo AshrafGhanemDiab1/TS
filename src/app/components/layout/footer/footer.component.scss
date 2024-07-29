@@ -2,6 +2,24 @@
 .footer-header {
   padding: 3.5rem 3rem;
   background-color: $mainColor;
+  overflow: hidden;
+  @media screen and (max-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .by-responsive {
+    @media (max-width: 500px) {
+      width: 80%;
+      text-align: center;
+      margin: auto;
+    }
+  }
+  .ul-responsive {
+    @media (max-width: 500px) {
+      justify-content: center;
+    }
+  }
   .row-header {
     width: 90%;
     margin: auto;
@@ -54,8 +72,9 @@
     input {
       padding: 0.9rem 14rem 0.9rem 5px;
       font-weight: 700;
-      width: 70%;
+      width: 80%;
       border-radius: unset !important;
+      position: relative;
     }
     @media (max-width: 400px) {
       padding: 0.9rem 2rem 0.9rem 5px;
@@ -64,24 +83,30 @@
 }
 .ps {
   position: relative;
-  padding: 1.1rem 3rem;
-  left: 0rem;
-  top: -55px;
-  height: 100%;
-  @media (max-width: 992px) {
-    transform: translate(0, 0);
-    top: 0;
+  @media screen and (max-width: 992px) {
     left: 0;
-    width: 100%;
+    ::ng-deep {
+      button {
+        width: 100% !important;
+        position: relative;
+        top: unset;
+        transform: translate(0, 0);
+        right: unset;
+        padding: 1rem 4rem;
+      }
+    }
   }
-  ::ng-deep button {
-    position: relative;
-    padding: 1.1rem 3rem;
-    left: 0rem;
-    top: -55px;
-    height: 100%;
+}
+:host ::ng-deep {
+  button {
+    position: relative !important;
+    padding: 1rem 4rem !important;
+    z-index: 7;
     @media screen and (max-width: 1200px) {
-      left: 40%;
+      padding: 1.1rem 4rem !important;
+    }
+    @media screen and (max-width: 500px) {
+      width: 100% !important;
     }
   }
 }

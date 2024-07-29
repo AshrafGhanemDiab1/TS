@@ -1,6 +1,6 @@
 @if (footer$ | async; as footer) {
 <div class="footer-header">
-  <div class="container-fluid text-white">
+  <div class="container-fluid text-white by-responsive">
     <div class="row-header">
       <div class="row">
         <div class="col-12">
@@ -104,7 +104,7 @@
                 </a>
               </li>
             </ul>
-            <ul class="d-flex">
+            <ul class="d-flex ul-responsive">
               <svg
                 width="45px"
                 height="45px"
@@ -195,10 +195,10 @@
                 name=""
                 id=""
               />
-              <app-button>
-                {{ "FOOTER.SUBSCRIBE" | translate }}
-              </app-button>
             </div>
+            <app-button>
+              {{ "FOOTER.SUBSCRIBE" | translate }}
+            </app-button>
           </div>
         </div>
       </div>

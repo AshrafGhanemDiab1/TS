@@ -1,0 +1,103 @@
+<div class="tahalof-container">
+  <div class="row">
+    <div class="col-12 d-flex justify-content-between align-items-center">
+      <h2>{{ home.news_title }}</h2>
+      <div class="swiper-navigation-wrapper">
+        <div
+          (click)="swiper.swiper.slidePrev()"
+          class="enhanced-swiper-button-prev swiper-button-prev"
+        >
+          <svg
+            width="50px"
+            height="50px"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            stroke="#0084ff"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <path
+                d="M4 12H20M4 12L8 8M4 12L8 16"
+                stroke="#ffffff"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </g>
+          </svg>
+        </div>
+        <div
+          (click)="swiper.swiper.slideNext()"
+          class="enhanced-swiper-button-next swiper-button-next"
+        >
+          <svg
+            width="50px"
+            height="50px"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            stroke="#0084ff"
+            transform="rotate(180)"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <path
+                d="M4 12H20M4 12L8 8M4 12L8 16"
+                stroke="#ffffff"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <swiper-container
+      class="mySwiper"
+      space-between="30"
+      [slidesPerView]="slidesPerView"
+      pagination="false"
+      #swiper
+    >
+      @for (item of home.news; track $index) {
+      <swiper-slide>
+        <div class="col-lg-12 col-md-12 my-3">
+          <div class="news-content-img d-flex justify-content-center">
+            <div class="news-img">
+              <img [src]="imageUrl + item.main_image" alt="" />
+            </div>
+            <div class="news-content">
+              <div class="hover"></div>
+              <h2>
+                <span><img [src]="imageUrl + item.news_svg" alt="" /></span>
+                {{ item.created_at }}
+              </h2>
+              <h3>{{ item.main_title }}</h3>
+              <p>{{ item.main_description | subText }}</p>
+              <app-button routerLink="{{ link }}/{{ item.id }}"
+                >Read More</app-button
+              >
+            </div>
+          </div>
+        </div></swiper-slide
+      >
+
+      }
+    </swiper-container>
+    <div class="read-more">
+      <app-button routerLink="/news">Read More</app-button>
+    </div>
+  </div>
+</div>

@@ -9,7 +9,7 @@
     position: relative;
   }
   img {
-    margin: 0 3rem;
+    margin: 0 3rem 0 9rem;
     width: 32%;
     cursor: pointer;
   }
@@ -34,7 +34,7 @@
       transition: 1s all;
     }
   }
-  ::ng-deep button {
+  .share ::ng-deep button {
     margin-inline-end: 2.5rem;
     padding: 0.6rem 1.5rem !important;
     background-color: $white !important;
@@ -45,4 +45,58 @@
 .activete {
   color: $white !important;
   opacity: 1 !important;
+}
+.menu-icon button {
+  display: none !important;
+}
+@media screen and (min-width: 128px) and (max-width: 900px) {
+  .content {
+    position: fixed !important;
+    right: -100%;
+    top: 0 !important;
+    background: $mainColor;
+    width: 100%;
+    height: 100vh;
+    z-index: 14;
+    transition: 0.4s ease-in-out;
+    padding-top: 113.8px;
+    z-index: 99;
+  }
+  .content ul {
+    display: block !important;
+    padding-inline-end: 0 !important;
+    li {
+      text-align: center !important;
+      margin: 0 !important;
+      padding: 1.5rem 0 1.5rem 0 !important;
+      border-bottom: 1px solid $white;
+    }
+    li:hover a {
+      opacity: 0.6;
+      font-size: 1.5rem;
+      transition: 1s all;
+    }
+    ::ng-deep button {
+      width: 100%;
+      margin: 1rem 0;
+    }
+  }
+  .menu-icon button {
+    display: block !important;
+    position: absolute;
+    font-size: 40px !important;
+    padding: 1rem 1.5rem !important;
+    margin-inline-end: 2.5rem !important;
+    transform: translate(-50%, -50%);
+    right: 0;
+    top: 50%;
+    z-index: 100;
+  }
+  .mobile_menu {
+    right: 0;
+    transition: 0.4s ease-in-out;
+  }
+  img {
+    width: 50% !important;
+  }
 }

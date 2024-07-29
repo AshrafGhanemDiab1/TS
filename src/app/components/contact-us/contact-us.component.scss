@@ -44,6 +44,10 @@
   position: relative;
   top: 10%;
   padding: 0 3rem;
+  @media screen and (max-width: 992px) {
+    top: 0;
+    padding: 3rem;
+  }
   .form-edits {
     width: 90%;
     margin: auto;

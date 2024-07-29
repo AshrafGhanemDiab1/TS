@@ -5,7 +5,7 @@
       <form class="h-100" (ngSubmit)="onSubmit()" [formGroup]="contactForm">
         <div class="form-content h-100">
           <div class="row h-100">
-            <div class="col-6">
+            <div class="col-md-6 col-sm-12">
               <div class="form-edits">
                 <p>
                   <mat-form-field>
@@ -47,9 +47,8 @@
                   </mat-form-field>
                 </p>
               </div>
-              <app-button>{{ "CAREERS.APPLY" | translate }}</app-button>
             </div>
-            <div class="col-6">
+            <div class="col-md-6 col-sm-12">
               <div class="form-edits">
                 <p>
                   <mat-form-field>
@@ -79,6 +78,7 @@
                 </p>
               </div>
             </div>
+            <app-button>{{ "CAREERS.APPLY" | translate }}</app-button>
           </div>
         </div>
       </form>

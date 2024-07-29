@@ -20,12 +20,14 @@ export interface Service {
   main_image: string;
   name: string;
   description: string;
+  uuid: string;
 }
 
 export interface Hospital {
   image: string;
   name: string;
   description: string;
+  uuid: string;
 }
 
 export interface News {

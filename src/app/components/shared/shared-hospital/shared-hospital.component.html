@@ -1,0 +1,14 @@
+<div #image class="content-img">
+  <div class="date">
+    <h4>{{ year }}</h4>
+  </div>
+  <div class="date-img">
+    <img [src]="imgUrl + imgOne" alt="" />
+  </div>
+  <div class="logo">
+    <img [src]="imgUrl + imgTow" alt="" />
+  </div>
+  <div class="overlay"></div>
+
+  <ng-content></ng-content>
+</div>
