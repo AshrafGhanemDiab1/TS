@@ -80,8 +80,8 @@ export class ContactUsComponent implements OnInit {
       name: ['', [Validators.required]],
       email: ['', [Validators.required, CustomValidatorsService.isEmail]],
       phone: ['', [Validators.required, CustomValidatorsService.isPhone]],
-      subject: ['', [Validators.required]],
-      message: ['', [Validators.required]],
+      subject: ['', Validators.required],
+      message: ['', Validators.required],
     });
   }
   onSubmit() {
@@ -93,7 +93,7 @@ export class ContactUsComponent implements OnInit {
       formData.append(key, val as any);
     });
     this.httpservice
-      .post(Endpoints.CAREER, formData)
+      .post(Endpoints.CONTACT, formData)
       .pipe(takeUntil(this.destroy$))
       .subscribe({
         next: () => {
